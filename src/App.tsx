@@ -28,6 +28,7 @@ import HelpOutlineIcon from '@mui/icons-material/HelpOutline';
 import PrivacyTipIcon from '@mui/icons-material/PrivacyTip';
 import GavelIcon from '@mui/icons-material/Gavel';
 import InfoIcon from '@mui/icons-material/Info';
+import GitHubIcon from '@mui/icons-material/GitHub';
 import Dialog from '@mui/material/Dialog';
 import DialogTitle from '@mui/material/DialogTitle';
 import DialogContent from '@mui/material/DialogContent';
@@ -576,9 +577,18 @@ const SimpleApp: React.FC = () => {
               </IconButton>
               <IconButton color="inherit" aria-label="privacy policy" onClick={() => setPrivacyOpen(true)}>
                 <PrivacyTipIcon />
-              </IconButton>
-              <IconButton color="inherit" aria-label="terms of use" onClick={() => setTermsOpen(true)}>
+              </IconButton>              <IconButton color="inherit" aria-label="terms of use" onClick={() => setTermsOpen(true)}>
                 <GavelIcon />
+              </IconButton>
+              <IconButton 
+                color="inherit" 
+                aria-label="view on github" 
+                component="a"
+                href="https://github.com/jomon003/PaperSaver"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <GitHubIcon />
               </IconButton>
               <IconButton color="inherit" aria-label="help" onClick={() => setHelpOpen(true)}>
                 <HelpOutlineIcon />
@@ -690,18 +700,16 @@ const SimpleApp: React.FC = () => {
             <Typography variant="body2" color="text.secondary" gutterBottom>
               Last updated: {new Date().toLocaleDateString()}
             </Typography>
-            
-            <Typography variant="h6" gutterBottom sx={{ mt: 2 }}>
+              <Typography variant="h6" gutterBottom sx={{ mt: 2 }}>
               Information We Collect
             </Typography>
             <Typography variant="body1" paragraph>
-              <strong>Analytics Data:</strong> We use Google Analytics to understand how users interact with our application. This includes:
+              <strong>Analytics Data:</strong> We use Cloudflare Analytics to understand basic traffic patterns. This includes:
             </Typography>
             <ul>
               <li>Page views and session duration</li>
-              <li>Device and browser information</li>
               <li>General geographic location (country/region level)</li>
-              <li>User interactions with the application features</li>
+              <li>Browser and device type (aggregated data only)</li>
             </ul>
             
             <Typography variant="h6" gutterBottom sx={{ mt: 2 }}>
@@ -726,24 +734,22 @@ const SimpleApp: React.FC = () => {
               <li>Are processed locally using client-side JavaScript</li>
               <li>Are automatically cleared from browser memory when you close the application</li>
             </ul>
-            
-            <Typography variant="h6" gutterBottom sx={{ mt: 2 }}>
+              <Typography variant="h6" gutterBottom sx={{ mt: 2 }}>
               Third-Party Services
             </Typography>
             <Typography variant="body1" paragraph>
-              We use Google Analytics for anonymous usage statistics. Google Analytics may use cookies and similar technologies. 
-              For more information about Google Analytics privacy practices, visit: 
-              <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" style={{ color: '#1976d2', textDecoration: 'none' }}>
-                Google Privacy Policy
+              We use Cloudflare Analytics for basic traffic statistics. Cloudflare Analytics is privacy-focused and does not use cookies or track individual users. 
+              For more information about Cloudflare's privacy practices, visit: 
+              <a href="https://www.cloudflare.com/privacy/" target="_blank" rel="noopener noreferrer" style={{ color: '#1976d2', textDecoration: 'none' }}>
+                Cloudflare Privacy Policy
               </a>
             </Typography>
-            
-            <Typography variant="h6" gutterBottom sx={{ mt: 2 }}>
+              <Typography variant="h6" gutterBottom sx={{ mt: 2 }}>
               Your Rights
             </Typography>
             <Typography variant="body1" paragraph>
-              Since we don't collect personal information, there's no personal data to delete or modify. 
-              You can disable Google Analytics by using browser extensions or adjusting your browser settings.
+              Since we don't collect personal information and use privacy-focused analytics, there's no personal data to delete or modify. 
+              Cloudflare Analytics does not track individual users or use cookies.
             </Typography>
             
             <Typography variant="h6" gutterBottom sx={{ mt: 2 }}>

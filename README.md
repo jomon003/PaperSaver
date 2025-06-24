@@ -4,6 +4,15 @@
 
 A modern web application designed to help small businesses and individuals optimize their printing workflow, reduce paper waste, and contribute to environmental conservation by enabling precise PDF document placement on pre-cut sticker papers.
 
+## 🚀 **Try It Now - FREE!**
+
+**🌐 Live Application: [https://papersaver.pages.dev/](https://papersaver.pages.dev/)**
+
+- ✅ **Completely FREE** to use
+- ✅ **No ads, no sign-ups, no strings attached**
+- ✅ **Works entirely in your browser** - no files uploaded to servers
+- ✅ **Hosted courtesy of Cloudflare Pages**
+
 ## 🌱 **Project Mission: Saving Trees & Reducing Waste**
 
 ### The Problem We Solve
